@@ -1,0 +1,18 @@
+import random
+def otp():
+	k=random.random()*100
+	print("OTP is: ",round(k))
+def valid(l):
+	if l==10:
+		print('valid number')
+		otp()
+	elif l!=10:
+		print('invalid number')
+		print('please enter 10 digit mobile number')
+	try:
+		n=int(input('Enter mobile number:'))
+		m=str(n)
+		l=len(n)
+		valid(l)
+	except:
+		print('please enter mobile number')
